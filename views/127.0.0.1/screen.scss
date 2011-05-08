@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  // font-size: 81.25%;
+  font-size: 100%;
+  background-image: url("/images/hazard-tile.jpg");
+}
+
+#banner h1 { 
+  font-family: 'Allerta Stencil', arial, serif; 
+  // font-size: 2em;
+}
+
+body * { font-family: 'Oswald', arial, serif; }
+
+.launching_soon {
+  * {
+    font-family: 'Just Another Hand', arial, serif; 
+    line-height: 1em;
+  }
+
+  -webkit-transform: rotate(-15deg); 
+  -moz-transform:    rotate(-15deg);	
+
+  -moz-box-shadow:    5px 5px 5px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow:         5px 5px 5px #aaaaaa;
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin:  30px;
+  background: yellow;
+}
+
+.container_padding {
+  background: blue;
+  width: 1050px;
+  padding: 50px 0;
+  margin: 0 auto;
+  background-image: url("/images/map.jpg");
+}
+
+#features {
+  .description {
+    padding-left: 50px;
+    text-align: justify;
+  }
+}

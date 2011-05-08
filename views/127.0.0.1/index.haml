@@ -1,0 +1,57 @@
+!!! 5
+%head
+  %title My Evacuation Plan
+  %script{:type=>"text/javascript", :src=>"jquery-1.4.2.min.js"}
+  %script{:type=>"text/javascript", :src=>"application.js"}
+  %link{:rel=>"stylesheet", :href=>"blueprint/screen.css", :type=>"text/css", :media=>"screen"}
+  %link{:rel=>"stylesheet", :href=>"screen.css", :type=>"text/css", :media=>"screen"}
+  %link{:href=>'http://fonts.googleapis.com/css?family=Oswald', :rel=>'stylesheet', :type=>'text/css'}
+  %link{:href=>'http://fonts.googleapis.com/css?family=Allerta+Stencil', :rel=>'stylesheet', :type=>'text/css'}
+  %link{:href=>'http://fonts.googleapis.com/css?family=Just+Another+Hand', :rel=>'stylesheet', :type=>'text/css'}
+  
+%body
+  .container_padding
+    .container
+      #banner
+        %h1 My Evacuation Plan
+        %h3.tagline Make a plan for when shit hits the fan.  Share it with the ones you love.
+      #middle
+        .main_description
+          %hr
+          %p
+            This is a longer description about why you should sign up!  You really should!
+
+        .signup_form
+          %hr
+          .span-24.last
+            .span-8
+              .launching_soon
+                %h2 We're working hard to launch as soon as possible!
+            .span-16.last
+              %form
+                %fieldset.box
+                  %p
+                    Sign up to be one of the first to be invited!
+                  %input.title{:type => "email", :placeholder => "Email address"}
+                  %br
+                  %input{:type => "submit", :value => "Request Invitation!"}
+      #features
+        %hr
+        .feature_1.span-8
+          %h4 Make a plan and track your supplies.
+          %p.description
+            Know where you'll head when the sky starts falling.  We'll manage
+            your maps, and help you keep track of your supplies and equipment.
+        .feature_2.span-8
+          %h4 Hardcopies for when the lights go out. 
+          %p.description
+            Get regularly updated, laminated, hardbound printouts of your maps
+            along with survival details and other information that you'll need
+            when you're forced offline.
+        .feature_3.span-8.last
+          %h4 Share with the ones you love. 
+          %p.description
+            Invite family and friends to review your plans.  Keep everyone on
+            the same page so you all know where you'll be when it's most
+            important.
+      #footer
