@@ -6,13 +6,6 @@ body {
   * { font-family: 'Oswald', arial, serif; }
 }
 
-// .container_padding {
-//   width: 1050px;
-//   padding: 50px 0;
-//   margin: 0 auto;
-//   background-image: url("/images/map.jpg");
-// }
-
 .container {
   background-image: url("/images/map.jpg");
 }
@@ -29,25 +22,32 @@ body {
   }
 }
 
+.main_description {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
 
 .launching_soon {
+  -webkit-transform: rotate(25deg); 
+  -moz-transform:    rotate(25deg);	
+
+  -moz-box-shadow:    10px 10px 20px black;
+  -webkit-box-shadow: 10px 10px 20px black;
+  box-shadow:         10px 10px 20px black;
+
+  padding: 10px;
+  margin:  30px;
+  background: yellow;
+  z-index: 3;
+  position: absolute;
+  width: 200px;
+  right: 100px;
+  top:   70px;
+
   * {
     font-family: 'Just Another Hand', arial, serif; 
     line-height: 1em;
   }
-
-  width: 200px;
-  -webkit-transform: rotate(-15deg); 
-  -moz-transform:    rotate(-15deg);	
-
-  -moz-box-shadow:    5px 5px 5px #aaaaaa;
-  -webkit-box-shadow: 5px 5px 5px #aaaaaa;
-  box-shadow:         5px 5px 5px #aaaaaa;
-
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin:  30px;
-  background: yellow;
 }
 
 .signup_form {
