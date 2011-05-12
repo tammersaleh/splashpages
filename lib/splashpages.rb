@@ -1,3 +1,4 @@
+Bundler.require
 require 'sinatra/base'
 
 class Splashpages < Sinatra::Base

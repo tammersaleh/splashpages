@@ -10,48 +10,71 @@
   %link{:href=>'http://fonts.googleapis.com/css?family=Just+Another+Hand', :rel=>'stylesheet', :type=>'text/css'}
   
 %body
-  .container_padding
-    .container
-      #banner
-        %h1 My Evacuation Plan
-        %h3.tagline Make a plan for when shit hits the fan.  Share it with the ones you love.
+  .container
+    #banner
+      %h1 My Evacuation Plan
+      %h3.tagline 
+        %p
+          Make a plan for when shit hits the fan.  Share it with the ones you love.
+    .span-1
+      &nbsp;
+    #inner.span-22
       #middle
         .main_description
           %hr
-          %p
-            This is a longer description about why you should sign up!  You really should!
+          :textile
+            From *Zombies* to *Pandemics*, *Aliens* to *Fukushima*, large scale disasters range from the fanciful to the frighteningly real.  MyEvacPlan.com lets you plan for any sort of emergency, ensuring that you and your loved ones know where to meet when the sky starts falling down.
+        %hr
+        .span-22.last
+          .span-11
+            .launching_soon
+              %h2 We're working hard to launch as soon as possible!
+          .span-11.last
+            .signup_form
+              :javascript
+                var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");
+                document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
 
-        .signup_form
-          %hr
-          .span-24.last
-            .span-8
-              .launching_soon
-                %h2 We're working hard to launch as soon as possible!
-            .span-16.last
-              %form
-                %fieldset.box
-                  %p
-                    Sign up to be one of the first to be invited!
-                  %input.title{:type => "email", :placeholder => "Email address"}
-                  %br
-                  %input{:type => "submit", :value => "Request Invitation!"}
+              :javascript
+                var q7x3p3 = new WufooForm();
+                q7x3p3.initialize({
+                  'userName':'tammersaleh', 
+                  'formHash':'q7x3p3', 
+                  'autoResize':true,
+                  'height':'260'});
+                q7x3p3.display();
       #features
         %hr
-        .feature_1.span-8
-          %h4 Make a plan and track your supplies.
-          %p.description
-            Know where you'll head when the sky starts falling.  We'll manage
-            your maps, and help you keep track of your supplies and equipment.
-        .feature_2.span-8
-          %h4 Hardcopies for when the lights go out. 
-          %p.description
-            Get regularly updated, laminated, hardbound printouts of your maps
-            along with survival details and other information that you'll need
-            when you're forced offline.
-        .feature_3.span-8.last
-          %h4 Share with the ones you love. 
-          %p.description
-            Invite family and friends to review your plans.  Keep everyone on
-            the same page so you all know where you'll be when it's most
-            important.
+        #feature_map.feature.span-11
+          .inner
+            %h4.title
+              Plan your escape.
+            %p.description
+              Know where you'll head when the sky starts falling.  We'll manage
+              your maps, and help you keep track of your supplies and equipment.
+        #feature_hardcopy.feature.span-11.last
+          .inner
+            %h4.title
+              Hardcopies for the road.
+            %p.description
+              Get regularly updated and laminated printouts of your maps
+              along with survival details and other information that you'll need
+              when you're forced off the grid.
+        #feature_discuss.feature.span-11
+          .inner
+            %h4.title
+              Discuss tools and techniques.
+            %p.description
+              Find the best tools and learn the best survival techniques from
+              experts.  Build your "get out of Dodge" bag from their recommendations.
+        #feature_share.feature.span-11.last
+          .inner
+            %h4.title
+              Share with the ones you love. 
+            %p.description
+              Invite family and friends to review your plans.  Keep everyone on
+              the same page so you all know where you'll be when it's most
+              important.
       #footer
+    .span-1.last
+      &nbsp;
