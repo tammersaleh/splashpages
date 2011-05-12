@@ -5,16 +5,15 @@ class Splashpages < Sinatra::Base
   set :root, File.expand_path(File.dirname(__FILE__) + '/../')
 
   get '/' do
-    haml :"#{request.host}/index"
+    haml :"#{host_without_www}/index"
   end
 
   get '/:name.css' do
-    scss :"#{request.host}/#{params[:name]}"
+    scss :"#{host_without_www}/#{params[:name]}"
   end
-  
-  post '/invitation' do
-    email = params[:email]
-    # TODO: stuff.
+
+  def host_without_www
+    request.host.sub(/^www./, "")
   end
 end
 
