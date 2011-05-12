@@ -5,5 +5,6 @@ gem 'haml'
 gem 'sass'
 gem "shotgun"
 gem "RedCloth"
+gem "heroku"
 
 
