@@ -1,0 +1,128 @@
+!!! 5
+%head
+  %title Rails AntiPatterns
+
+  %meta{:content=>"Ruby, Rails, AntiPatterns, Tammer Saleh, Chad Pytel, Thoughtbot, Shoulda", :name=>"keywords"}
+  %meta{:content=>"Best Practice Ruby on Rails Refactoring.", :name=>"description"}
+  -# %script{:type=>"text/javascript", :src=>"javascript/jquery-1.4.2.min.js"}
+  %script{:type=>"text/javascript", :src=>"javascript/application.js"}
+  %link{:rel=>"stylesheet", :href=>"blueprint/screen.css", :type=>"text/css", :media=>"screen"}
+  %link{:rel=>"stylesheet", :href=>"screen.css", :type=>"text/css", :media=>"screen"}
+  -# %link{:href=>'http://fonts.googleapis.com/css?family=Oswald', :rel=>'stylesheet', :type=>'text/css'}
+  -# %link{:href=>'http://fonts.googleapis.com/css?family=Allerta+Stencil', :rel=>'stylesheet', :type=>'text/css'}
+  -# %link{:href=>'http://fonts.googleapis.com/css?family=Just+Another+Hand', :rel=>'stylesheet', :type=>'text/css'}
+  -# :javascript
+  -#   var _gaq = _gaq || [];
+  -#   _gaq.push(['_setAccount', 'UA-338217-7']);
+  -#   _gaq.push(['_trackPageview']);
+
+  -#   (function() {
+  -#     var ga = document.createElement('script'); 
+  -#     ga.type = 'text/javascript'; 
+  -#     ga.async = true;
+  -#     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  -#     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  -#   })();
+%body
+  .container
+    #banner.span-22.last
+      #book
+      %h1 
+        Rails AntiPatterns:
+        .tagline 
+          Best Practice Ruby on Rails Refactoring
+      .meta
+        A book by 
+        %span Tammer Saleh 
+        and 
+        %span Chad Pytel
+        %hr
+    .span-22
+      .main_description.span-14
+        %p
+          Learn how to identify and fix over 300 of the most common mistakes made in Ruby
+          on Rails applications.  Avoid those code pitfalls that reduce code quality, performance,
+          stability, scalability, and maintainability.
+        %p
+          Far from being an academic textbook, each AntiPattern was pulled from
+          real world applications that Tammer &amp; Chad encountered and successfully refactored throughout
+          their careers.
+
+      #reviews.span-8.last
+        .box
+          .quote
+            %bq The authors obviously have deep knowledge of and passion for Rails, and this translates well on the page.
+            .citation
+              Mike Riley, 
+              %a{:href=>"/"}
+                Dr Dobb's Journal
+          .quote
+            %bq Another great quote about how good this book was!
+            .citation
+              Joe Someone,
+              %a{:href=>"/"}
+                New York Times
+          .quote
+            %bq This book rocked!
+            .citation
+              Some dude, 
+              %a{:href=>"/"}
+                Twitter
+          .quote
+            %bq I can't explain how much this book has helped me out!
+            .citation
+              Another person, 
+              %a{:href=>"/"}
+                Twitter
+    #buy_now
+      .header
+        Purchase Rails AntiPatterns on
+        %a{:href=>"/"}
+          Amazon!
+      .more
+        (available in paperback and Kindle!)
+    #authors.span-22.last
+      %hr
+      #tammer_saleh.author.span-11
+        .bio
+          .span-3
+            %img.avatar{ :src => "/images/tammer_avatar.jpg" }
+          .span-8.last
+            .name Tammer Saleh
+            .title
+              Director of Engineering at 
+              %a{:href=>"http://engineyard.com"} Engine Yard
+            %p
+              Tammer is an experienced Ruby on Rails trainer and speaker with a
+              history rooted in Systems Administration.  While working at
+              thoughtbot, Tammer wrote the Shoulda testing framework, and the 
+              %a{:href=>"http://hoptoadapp.com"} Hoptoad service. 
+            %p
+              Follow Tammer on 
+              %a{:href=>"http://twitter.com/tsaleh"} twitter, 
+              or read more about him at
+              %a{:href=>"http://tammersaleh.com"} tammersaleh.com.
+      #chad_pytel.author.span-11.last
+        .bio
+          .span-3
+            %img.avatar{ :src => "/images/chad_avatar.jpg" }
+          .span-8.last
+            .name Chad Pytel
+            .title 
+              Founder and CEO of 
+              %a{:href=>"http://thoughtbot.com"} thoughtbot:
+            %p
+              Chad's Ruby on Rails consultancy, thoughtbot, embraces
+              both agile development methodologies and a “getting real” project
+              philosophy. Chad has also coauthored 
+              %em Pro Active Record: Databases with Ruby and Rails
+              and has presented at various conferences around the world. 
+            %p
+              To read more of Chad and the rest of the
+              thoughtbot team’s ideas on development, design, technology, and
+              business, 
+              %a{:href=>"http://robots.thoughtbot.com"} visit their blog!
+    #footer
+      %hr
+      &copy; 2011 
+      Tammer Saleh

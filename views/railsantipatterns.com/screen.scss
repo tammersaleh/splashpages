@@ -1,0 +1,170 @@
+$background: #453625;
+$paper: #E6DEAF;
+$emboss_highlight: lighten($paper, 10%);
+
+@mixin shadow($x, $y, $distance, $base_color) {
+  -moz-box-shadow:    $x $y $distance darken($base_color, 10%);
+  -webkit-box-shadow: $x $y $distance darken($base_color, 10%);
+  box-shadow:         $x $y $distance darken($base_color, 10%);
+}
+
+@mixin rounded($curve) {
+  -moz-border-radius:    $curve;
+  -webkit-border-radius: $curve;
+  border-radius:         $curve;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  background: $background;
+  * {
+    text-shadow: 0px 1px 0px $emboss_highlight;
+    color: $background;
+    // text-align: justify;
+  }
+}
+
+.container {
+  margin: 10px auto;
+  background: $paper;
+  @include shadow(0, 0, 20px, $background);
+  @include rounded(5px);
+  > div {
+    padding: 0 20px;
+    margin:  0 20px;
+  }
+}
+
+.last { margin-right: 0 !important; }
+
+#banner { 
+  padding-top: 30px;
+  
+  h1{
+    text-align: left;
+    font-family: Georgia;
+    letter-spacing: 0.1em;
+    color: rgb(142,11,0);
+
+    .tagline {
+      display: inline;
+    }
+  }
+  .meta{
+    font-family: Georgia;
+    color: rgba(69,54,37,0.6);
+    font-style: italic;
+    letter-spacing: 0.10em;
+
+    span{
+      text-transform: capitalize;
+      font-style: normal;
+      color: rgba(69,54,37,0.8);
+    }
+  }
+  #book {
+    float: right;
+    background: red;
+    width: 150px;
+    height: 200px;
+    margin: 10px 40px 10px 10px;
+    -webkit-transform: rotate(15deg); 
+    -moz-transform:    rotate(15deg);	
+  }
+}
+
+#buy_now {
+  font-family: Georgia;
+  font-style: italic;
+  .header {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  .more {
+    text-align: center;
+    color: lighten($background, 10%);
+    // font-size: 1.5em;
+  }
+  a { color: inherit; }
+  a:hover { color: $background; }
+}
+
+.container .wide {
+  clear: both;
+  padding: 0;
+  margin-left: -40px;
+  width: 1030px;
+}
+
+#authors {
+  padding-top: 20px;
+}
+
+.box {
+  font-size: 75%;
+  @include shadow(10px, 10px, 20px, $paper);
+  @include rounded(5px);
+  background: lighten($paper, 10%);
+}
+
+.main_description {
+  p {
+    font-size: 1.1em;
+    font-family: Georgia;
+    letter-spacing: 0.1em;
+  }
+  p:first-line { font-weight: bold; }
+}
+
+#authors {
+  font-size: 75%;
+  .avatar {
+    @include rounded(10px);
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+  }
+  .name { 
+    font-size: 1.5em;
+    font-weight: bold; 
+  }
+  .title { 
+    font-style: italic; 
+    padding-bottom: 1em;
+  }
+}
+
+#footer {
+  text-align: right;
+}
+
+a {
+  :hover { color: $background; }
+  font-weight: bold;
+  color: lighten($background, 10%);
+}
+
+hr { 
+  color: rgba(69,54,37,0.6); 
+  background-color: rgba(69,54,37,0.6); 
+}
+
+#reviews {
+  .quote:last-child { border: none; }
+  .quote {
+    border-bottom: 1px solid $paper;
+    padding-top: 5px;
+
+    bq {
+      font-family: Georgia;
+      font-style: italic;
+    }
+    .citation {
+      text-align: right;
+    }
+  }
+}
+
