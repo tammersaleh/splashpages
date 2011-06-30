@@ -26,7 +26,6 @@
 %body
   .container
     #banner.span-22.last
-      #book
       %h1 
         Rails AntiPatterns:
         .tagline 
@@ -38,49 +37,60 @@
         %span Chad Pytel
         %hr
     .span-22
-      .main_description.span-14
+      .span-5
+        %a{:href=>"http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814"} 
+          %img#book{:src => "images/rails_antipatterns.jpg"}
+      .main_description.span-17.last
+        %a#buy_now{:href=>"http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814"} 
+          .header
+            Purchase on Amazon!
+          .more (available in paperback and Kindle)
         %p
           Learn how to identify and fix over 300 of the most common mistakes made in Ruby
           on Rails applications.  Avoid those code pitfalls that reduce code quality, performance,
           stability, scalability, and maintainability.
         %p
           Far from being an academic textbook, each AntiPattern was pulled from
-          real world applications that Tammer &amp; Chad encountered and successfully refactored throughout
-          their careers.
+          real world applications that we have encountered and successfully refactored throughout
+          our careers.
 
-      #reviews.span-8.last
-        .box
-          .quote
-            %bq The authors obviously have deep knowledge of and passion for Rails, and this translates well on the page.
-            .citation
-              Mike Riley, 
-              %a{:href=>"/"}
-                Dr Dobb's Journal
-          .quote
-            %bq Another great quote about how good this book was!
-            .citation
-              Joe Someone,
-              %a{:href=>"/"}
-                New York Times
-          .quote
-            %bq This book rocked!
-            .citation
-              Some dude, 
-              %a{:href=>"/"}
-                Twitter
-          .quote
-            %bq I can't explain how much this book has helped me out!
-            .citation
-              Another person, 
-              %a{:href=>"/"}
-                Twitter
-    #buy_now
-      .header
-        Purchase Rails AntiPatterns on
-        %a{:href=>"/"}
-          Amazon!
-      .more
-        (available in paperback and Kindle!)
+    #reviews.span-22
+      %hr
+      .span-11
+        .quote
+          %bq  It's nice to have guides like Chad and Tammer there to suggest improvements to my technique. Highly recommended for anyone novice or intermediate Rails developer.
+          .citation
+            %a{:href=>"http://www.amazon.com/review/RRGA273WHF85C/ref=cm_cr_pr_perm?ie=UTF8&ASIN=0321604814&nodeID=&tag=&linkCode="}
+              Michael Doel
+        .quote
+          %bq I would recommend this book in a heart beat (and I already have... many, many times). Great job guys! I really appreciate the effort you put into writing this book! You have restored my faith in Rails authors!
+          .citation
+            %a{:href=>"http://www.amazon.com/review/R2X2NK2G1MPGRP/ref=cm_cr_pr_perm?ie=UTF8&ASIN=0321604814&nodeID=&tag=&linkCode="}
+              Robert A. Phillips
+        .quote
+          %bq This book rules. There are so many good suggestions and I would say almost every Rails developer has encountered these messy situations before and scratched their head wondering what the best approach is to tackling it. 
+          .citation
+            %a{:href=>"http://www.amazon.com/review/R1Q60Y26R0WS9B/ref=cm_cr_pr_perm?ie=UTF8&ASIN=0321604814&nodeID=&tag=&linkCode="}
+              anorakcity
+              
+      .span-11.last
+        .quote
+          %bq The authors obviously have deep knowledge of and passion for Rails, and this translates well on the page.
+          .citation
+            Mike Riley, 
+            %a{:href=>"http://drdobbs.com/article/print?articleId=229300218"}
+              Dr Dobb's Journal
+        .quote
+          %bq Everything I read in the book I can apply to the projects I work on everyday. Whether you're new to Rails or an old hat, this book *will* help you write better Rails applications. Read it, think about it, and apply it.
+          .citation
+            %a{:href=>"http://www.amazon.com/review/R1OW9PDW171FV1/ref=cm_cr_pr_perm?ie=UTF8&ASIN=0321604814&nodeID=&tag=&linkCode="}
+              Adam McCrea
+        .quote 
+          %bq I have a love affair with this book.  Every section of every chapter has given me practical refactoring advice, and for every section I find myself putting the book down in order to dig into my current project and apply what I'm learning about. 
+          %bq 
+          .citation
+            %a{:href=>"http://www.amazon.com/review/R2B83FPB6IZAR5/ref=cm_cr_pr_perm?ie=UTF8&ASIN=0321604814&nodeID=&tag=&linkCode="}
+              Katrina Owen
     #authors.span-22.last
       %hr
       #tammer_saleh.author.span-11
