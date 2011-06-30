@@ -3,7 +3,10 @@ $paper: #E6DEAF;
 $emboss_highlight: lighten($paper, 10%);
 $title_highlight: rgb(142,11,0);
 $book_color: #E71F2A;
-$callout_background: rgba(30, 30, 30, 0.6);
+// $callout_background: rgba(30, 30, 30, 0.6);
+$callout_background: $background;
+$hr_color: rgba(69,54,37,0.6);
+$book_width: 220px;
 
 @mixin shadow($x, $y, $distance, $base_color) {
   -moz-box-shadow:    $x $y $distance darken($base_color, 10%);
@@ -43,6 +46,7 @@ body {
 
 #banner { 
   padding-top: 30px;
+  margin-left: $book_width + 20px;
   
   h1{
     text-align: left;
@@ -57,6 +61,24 @@ body {
     color: rgba(69,54,37,0.6);
     font-style: italic;
     letter-spacing: 0.10em;
+  }
+  border-bottom: 1px solid $hr_color;
+}
+
+#book { 
+  @include shadow(0px, 0px, 10px, darken($paper, 50%));
+  width: $book_width; 
+  margin: 30px 20px 0 0;
+  float: left;
+}
+
+.main_description {
+  margin-top: 18px;
+  p:first-line { font-weight: bold; }
+  p {
+    font-size: 1.1em;
+    font-family: Georgia;
+    letter-spacing: 0.1em;
   }
 }
 
@@ -96,20 +118,6 @@ body {
   padding-top: 20px;
 }
 
-#book { 
-  @include shadow(0px, 0px, 10px, darken($paper, 50%));
-  width:  90%; 
-}
-
-.main_description {
-  p {
-    font-size: 1.1em;
-    font-family: Georgia;
-    letter-spacing: 0.1em;
-  }
-  p:first-line { font-weight: bold; }
-}
-
 #authors {
   font-size: 75%;
   .avatar {
@@ -139,8 +147,9 @@ a {
 }
 
 hr { 
-  color: rgba(69,54,37,0.6); 
-  background-color: rgba(69,54,37,0.6); 
+  clear: none;
+  color: $hr_color; 
+  background-color: $hr_color; 
 }
 
 #reviews {
