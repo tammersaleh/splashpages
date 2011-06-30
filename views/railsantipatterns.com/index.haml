@@ -4,13 +4,12 @@
 
   %meta{:content=>"Ruby, Rails, AntiPatterns, Training, Sinatra, Cloud, Web Applications, Tammer Saleh, Chad Pytel, Thoughtbot, Shoulda", :name=>"keywords"}
   %meta{:content=>"Best Practice Ruby on Rails Refactoring.", :name=>"description"}
-  -# %script{:type=>"text/javascript", :src=>"javascript/jquery-1.4.2.min.js"}
   %script{:type=>"text/javascript", :src=>"javascript/application.js"}
   %link{:rel=>"stylesheet", :href=>"blueprint/screen.css", :type=>"text/css", :media=>"screen"}
   %link{:rel=>"stylesheet", :href=>"screen.css", :type=>"text/css", :media=>"screen"}
-  -# %link{:href=>'http://fonts.googleapis.com/css?family=Oswald', :rel=>'stylesheet', :type=>'text/css'}
-  -# %link{:href=>'http://fonts.googleapis.com/css?family=Allerta+Stencil', :rel=>'stylesheet', :type=>'text/css'}
-  -# %link{:href=>'http://fonts.googleapis.com/css?family=Just+Another+Hand', :rel=>'stylesheet', :type=>'text/css'}
+  /[if IE]
+    %link{:rel=>"stylesheet", :href=>"blueprint/ie.css", :type=>"text/css", :media=>"screen"}
+  
   :javascript
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-338217-8']);
