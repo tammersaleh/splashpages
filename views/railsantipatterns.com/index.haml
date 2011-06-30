@@ -11,44 +11,45 @@
   -# %link{:href=>'http://fonts.googleapis.com/css?family=Oswald', :rel=>'stylesheet', :type=>'text/css'}
   -# %link{:href=>'http://fonts.googleapis.com/css?family=Allerta+Stencil', :rel=>'stylesheet', :type=>'text/css'}
   -# %link{:href=>'http://fonts.googleapis.com/css?family=Just+Another+Hand', :rel=>'stylesheet', :type=>'text/css'}
-  -# :javascript
-  -#   var _gaq = _gaq || [];
-  -#   _gaq.push(['_setAccount', 'UA-338217-7']);
-  -#   _gaq.push(['_trackPageview']);
+  :javascript
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-338217-8']);
+    _gaq.push(['_trackPageview']);
 
-  -#   (function() {
-  -#     var ga = document.createElement('script'); 
-  -#     ga.type = 'text/javascript'; 
-  -#     ga.async = true;
-  -#     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  -#     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  -#   })();
+    (function() {
+      var ga = document.createElement('script'); 
+      ga.type = 'text/javascript'; 
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 %body
   .container
-    #banner.span-22.last
-      %h1 
-        Rails AntiPatterns:
-        .tagline 
-          Best Practice Ruby on Rails Refactoring
-      .meta
-        A book by 
-        %span Tammer Saleh 
-        and 
-        %span Chad Pytel
-        %hr
     .span-22
       .span-5
         %a{:href=>"http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814"} 
           %img#book{:src => "images/rails_antipatterns.jpg"}
+      #banner.span-17.last
+        %h1 
+          Rails AntiPatterns:
+          .tagline 
+            Best Practice Ruby on Rails Refactoring
+        .meta
+          A book by 
+          %span Tammer Saleh 
+          and 
+          %span Chad Pytel
+          %hr
+    .span-22
       .main_description.span-17.last
-        %a#buy_now{:href=>"http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814"} 
-          .header
-            Purchase on Amazon!
-          .more (available in paperback and Kindle)
         %p
           Learn how to identify and fix over 300 of the most common mistakes made in Ruby
           on Rails applications.  Avoid those code pitfalls that reduce code quality, performance,
           stability, scalability, and maintainability.
+        %a#buy_now{:href=>"http://www.amazon.com/Rails-AntiPatterns-Refactoring-Addison-Wesley-Professional/dp/0321604814"} 
+          .header
+            Purchase on Amazon!
+          .more (available in paperback and Kindle)
         %p
           Far from being an academic textbook, each AntiPattern was pulled from
           real world applications that we have encountered and successfully refactored throughout
