@@ -46,7 +46,7 @@ body {
 
 #banner { 
   padding-top: 30px;
-  margin-left: $book_width + 20px;
+  margin-left: $book_width + 30px;
   
   h1{
     text-align: left;
@@ -54,7 +54,10 @@ body {
     letter-spacing: 0.1em;
     color: $title_highlight;
 
-    .tagline { font-size: 0.8em; }
+    .tagline { 
+      line-height: 1.2;
+      font-size: 0.8em; 
+    }
   }
   .meta{
     font-family: Georgia;
@@ -68,12 +71,12 @@ body {
 #book { 
   @include shadow(0px, 0px, 10px, darken($paper, 50%));
   width: $book_width; 
-  margin: 30px 20px 0 0;
+  margin: 30px 30px 30px 0;
   float: left;
 }
 
 .main_description {
-  margin-top: 18px;
+  margin-top: 30px;
   p:first-line { font-weight: bold; }
   p {
     font-size: 1.1em;
@@ -88,8 +91,8 @@ body {
   background: $callout_background;
   font-family: Georgia;
   font-style: italic;
-  border: 1px dashed darken($paper, 80%);
-  margin-left: 10px;
+  border: 1px solid darken($paper, 80%);
+  margin-left: 30px;
   padding: 5px 10px;
   text-decoration: none;
   * { text-shadow: 0px 1px 0px black; }
