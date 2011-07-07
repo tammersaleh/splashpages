@@ -2,12 +2,12 @@ body {
   padding: 0;
   margin: 0;
   font-size: 100%;
-  background-image: url("/images/hazard-tile-subtle.jpg");
+  background-image: url("/images/myevacplan/hazard-tile-subtle.jpg");
   * { font-family: 'Oswald', arial, serif; }
 }
 
 .container {
-  background-image: url("/images/map.jpg");
+  background-image: url("/images/myevacplan/map.jpg");
 }
 
 #banner { 
@@ -83,10 +83,10 @@ body {
     -webkit-background-size: 70px 70px;
   }
 
-  #feature_map      { background-image: url("/images/map.png"); }
-  #feature_hardcopy { background-image: url("/images/hardcopy.png"); }
-  #feature_discuss  { background-image: url("/images/discuss.png"); }
-  #feature_share    { background-image: url("/images/share.png"); }
+  #feature_map      { background-image: url("/images/myevacplan/map.png"); }
+  #feature_hardcopy { background-image: url("/images/myevacplan/hardcopy.png"); }
+  #feature_discuss  { background-image: url("/images/myevacplan/discuss.png"); }
+  #feature_share    { background-image: url("/images/myevacplan/share.png"); }
 }
 
 #footer {
