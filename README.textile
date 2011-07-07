@@ -1,0 +1,12 @@
+Very simple rack app for serving HAML/SCSS pages as semi-static sites.
+
+Pages are served out of @views/DOMAIN/@, based on the domain of the request.
+
+To run locally:
+
+<pre><code>
+$ grep localhost /etc/hosts
+127.0.0.1	localhost myevacplan.local railsantipatterns.local
+</code></pre>
+
+...and use bundler:  @bundle && bundle exec shotgun@
