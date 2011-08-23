@@ -2,12 +2,12 @@ body {
   padding: 0;
   margin: 0;
   font-size: 100%;
-  background-image: url("/images/myevacplan/hazard-tile-subtle.jpg");
-  * { font-family: 'Oswald', arial, serif; }
+  // background-image: url("/images/myevacplan/hazard-tile-subtle.jpg");
+  * { font-family: 'Caudex', arial, serif; }
 }
 
 .container {
-  background-image: url("/images/myevacplan/map.jpg");
+  // background-image: url("/images/myevacplan/map.jpg");
 }
 
 #banner { 
@@ -17,7 +17,8 @@ body {
   * { color: white; }
 
   h1 { 
-    font-family: 'Allerta Stencil', arial, serif; 
+    font-size: 4em;
+    font-family: 'IM Fell Double Pica SC'; 
     color: yellow;
   }
 }
@@ -43,9 +44,10 @@ body {
   width: 200px;
   right: 100px;
   top:   70px;
+  // font-size: 0.7em;
 
   * {
-    font-family: 'Just Another Hand', arial, serif; 
+    font-family: 'Montez', arial, serif; 
     line-height: 1em;
   }
 }
