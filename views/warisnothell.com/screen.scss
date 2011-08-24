@@ -2,95 +2,58 @@ body {
   padding: 0;
   margin: 0;
   font-size: 100%;
-  // background-image: url("/images/myevacplan/hazard-tile-subtle.jpg");
-  * { font-family: 'Caudex', arial, serif; }
+  background-image:    url("/images/warisnothell/bg-banner.gif"), url("/images/warisnothell/bg-container.gif"), url("/images/warisnothell/parchment-2.png");
+  background-repeat:   no-repeat, repeat-y, no-repeat;
+  background-position: center -30px, center 192px, left top;
+  background-size:     auto, auto, 100% 100%;
+  * { 
+    font-family: 'Caudex', arial, serif; 
+    color: rgb(64, 18, 0);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+  }
+  text-align: center;
 }
 
 .container {
-  // background-image: url("/images/myevacplan/map.jpg");
-}
+  width: 600px;
+  margin: 50px auto 0 auto;
+  padding: 50px 0 0 0;
+  font-size: 1.5em;
 
-#banner { 
-  background: rgba(0, 0, 0, 0.8);
-  padding: 50px 0 10px 40px;
-
-  * { color: white; }
-
-  h1 { 
-    font-size: 4em;
+  h1, h2, h3, h4, h5, h6 { 
+    margin: 20px;
     font-family: 'IM Fell Double Pica SC'; 
-    color: yellow;
+    * {
+      font-family: 'IM Fell Double Pica SC'; 
+    }
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+  #banner { 
+    h1 { 
+      font-size: 3em;
+    }
+  }
+
+  .column {
+    width: 280px;
+    float: left;
+    margin:0;
+    padding: 0 10px;
+
+    .signup_form {
+      font-size: 1.5em;
+    }
+  }
+
+  .footer { 
+    font-size: 0.5em;
+    padding: 30px 10px;
+    text-align: right; 
+    clear: both;
   }
 }
 
-.main_description {
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-
-.launching_soon {
-  -webkit-transform: rotate(25deg); 
-  -moz-transform:    rotate(25deg);	
-
-  -moz-box-shadow:    10px 10px 20px black;
-  -webkit-box-shadow: 10px 10px 20px black;
-  box-shadow:         10px 10px 20px black;
-
-  padding: 10px;
-  margin:  30px;
-  background: yellow;
-  z-index: 3;
-  position: absolute;
-  width: 200px;
-  right: 100px;
-  top:   70px;
-  // font-size: 0.7em;
-
-  * {
-    font-family: 'Montez', arial, serif; 
-    line-height: 1em;
-  }
-}
-
-.signup_form {
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 3px solid gray;
-  -moz-border-radius:    5px;
-  -webkit-border-radius: 5px;
-  border-radius:         5px;
-}
-
-#features {
-  .inner {
-    padding: 10px;
-    margin: 10px;
-
-    background: rgba(255, 255, 255, 0.5);
-    -moz-border-radius:    15px;
-    -webkit-border-radius: 15px;
-    border-radius:         15px;
-    border: 3px solid white;
-    height: 150px;
-  }
-
-  .description {
-    padding-left: 80px;
-  }
-
-  .feature {
-    background-repeat: no-repeat;
-    background-position:     20px 70px;
-    -moz-background-size:    70px 70px;
-    -webkit-background-size: 70px 70px;
-  }
-
-  #feature_map      { background-image: url("/images/myevacplan/map.png"); }
-  #feature_hardcopy { background-image: url("/images/myevacplan/hardcopy.png"); }
-  #feature_discuss  { background-image: url("/images/myevacplan/discuss.png"); }
-  #feature_share    { background-image: url("/images/myevacplan/share.png"); }
-}
-
-#footer {
-  text-align: right;
-}
