@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-size: 100%;
   background-image:    url("/images/warisnothell/bg-banner.png"), url("/images/warisnothell/bg-container.gif"), url("/images/warisnothell/parchment-2.png");
-  background-repeat:   no-repeat, repeat-y, no-repeat;
+  background-repeat:   no-repeat, repeat-y, repeat-y;
   background-position: center -30px, center 192px, left top;
   background-size:     auto, auto, 100% 100%;
   * { 
